@@ -34,16 +34,3 @@ streamlit run main.py
 $env:OPENAI_API_KEY = "<your-openai-key-here>"
 ```
 
-## Security
-
-- The code (both `main.py` and `Counseling.ipynb`) now reads the API key from the `OPENAI_API_KEY` environment variable. Do not hard-code API keys in source files.
-- If a key was accidentally committed or exposed, rotate (revoke and create a new) the key immediately via your provider dashboard and remove it from git history if it was pushed to a public repo.
-
-## How to publish to GitHub (short)
-1. Create a new empty repo on GitHub (no README/license).
-2. In this folder run the git commands below (example provided in the repo root `GIT_PUSH.md`).
-
-## Next steps
-- Add a `LICENSE` (MIT suggested).
-- Add a simple GitHub Actions workflow for tests/linting.
-- Add a short `README` section documenting `main.py` inputs/outputs and any expected files.
